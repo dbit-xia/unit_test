@@ -1,0 +1,25 @@
+{
+  "listeners": {
+    "*:5001": {
+      "pass": "applications/server"
+    }
+  },
+  "applications": {
+    "server": {
+      "type": "external",
+      "working_directory": "/home/dbit/Code/unit_test/",
+      "executable": "/usr/bin/env",
+      "user": "dbit",
+      "processes": 1,
+      "arguments": [
+        "node",
+        "--require",
+        "unit-http/loader",
+        "server.js"
+      ],
+      "environment": {
+        "V": "1.0"
+      }
+    }
+  }
+}
