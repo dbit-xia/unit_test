@@ -3,6 +3,10 @@
 if datasize between 131k and 165k , response time > **40ms** 
 else response time < **2ms** 
 
+#### install
+```
+npm install
+```
 
 #### startServer
 ```bash
