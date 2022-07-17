@@ -5,6 +5,7 @@ else response time < **2ms**
 
 #### install
 ```
+sudo apt install unit-dev
 npm install
 ```
 
